@@ -1,0 +1,390 @@
+/* Container to put slide into */
+.container{
+    display: grid;
+    grid-template-columns: auto(5, auto);
+    grid-template-rows: auto(8, auto);
+}
+/* Puts slide into the container */
+.slide{
+    grid-row:1/6;
+    grid-column:1/4;
+    border: 2px solid black;
+}
+
+/* Format for the navbar */
+nav {
+    background: #0a5326;
+    height: 80px;
+    width: 100%;
+}
+/* Formats the items in the navbar */
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    /* padding: 0 100px; */
+    font-weight: bold;
+}
+/* Formatting */
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+/* Formatting */
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+/* Formatting */
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+/* Formatting for when you hover over the links */
+a.active,
+a:hover {
+    background: black;
+    transition: .5s;
+}
+/* Formatting */
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* Hides the checkbox in the navbar */
+#check {
+    display: none;
+}
+/* Creates the gradient for the background */
+body{
+    background-image:linear-gradient(to right, rgb(41, 236, 236), darkslategray);
+}
+/* #logo{
+    float: left;
+    width:10%;
+    height:100%;
+} */
+/* Reformat for when screen shrinks below 952px */
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        /* padding-left: 50px; */
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+/* Reformat for when screen shrinks below 858px */
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        display: none;
+    }
+}
+
+/*The webpage has been designed*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Creates white border for slide */
+body {
+    background-color: #ffffff;
+}
+
+/*Basic structure of slider*/
+.container {
+    width: 500px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: -1px 5px 15px black;
+    margin-top: 470px;
+}
+/* Formats the logo in the navbar */
+.logos1 {
+    width: auto;
+    height: 90%;
+    float:left;
+}
+/* Helps format the size of the slider */
+ .slider {
+     width: 500px;
+     height: 300px;
+     background-color: yellow;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 0px;
+     text-align: center;
+     overflow: hidden;
+ }
+/* Moves images in slide */
+ .image-container {
+     width: 1500px;
+     background-color: pink;
+     height: 300px;
+     clear: both;
+     position: relative;
+     -webkit-transition: left 2s;
+     -moz-transition: left 2s;
+     -o-transition: left 2s;
+     transition: left 2s;
+ }
+/* Image slide container */
+ .slide {
+     float: left;
+     margin: 0px;
+     padding: 0px;
+     position: relative;
+ }
+/* Helps the slide move left */
+ #slide-1:target~.image-container {
+     left: 0px;
+ }
+
+ #slide-2:target~.image-container {
+     left: -500px;
+ }
+
+ #slide-3:target~.image-container {
+     left: -1000px;
+ }
+
+ /* .buttons {
+     position: relative;
+     
+ } */
+
+ /* .buttons a {
+     display: inline-block;
+     height: 15px;
+     width: 15px;
+     border-radius: 50px;
+     background-color: lightgreen;
+ } */
+/* Creates grid for videos */
+.containerV{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    border-radius: 25px;
+}
+/* Creates grid section for ASU_Dino */
+.ASU_Dino{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 25px;
+}
+/* Creates grid section for bee_bucket */
+.bee_bucket {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-radius: 25px;
+}
+/* Creates grid section for bee */
+.bee {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-radius: 25px;
+}
+/* Creates grid section for cuttlefish */
+.cuttlefish {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    border-radius: 25px;
+}
+/* Creates grid section for cuttlefish2 */
+.cuttlefish2 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    border-radius: 25px;
+}
+/* Creates grid section for cuttlefish3 */
+.cuttlefish3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 25px;
+}
+/* Creates grid section for duck */
+.duck {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 25px;
+}
+/* Creates grid section for minecraft_bee */
+.minecraft_bee {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border-radius: 25px;
+}
+/* Creates grid section for minecraft_bee2 */
+.minecraft_bee2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    border-radius: 25px;
+}
+/* Creates grid section for yarn */
+.yarn {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    border-radius: 25px;
+}
+/* Resizes the videos */
+video{
+    width:100%;
+    height: 100%;
+}
+   
+/*Area of images*/
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 30s infinite;
+}
+
+/* Sets size of the images */
+img {
+    width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    5% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    15% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(-200%);
+    }
+
+    25% {
+        transform: translateX(-200%);
+    }
+
+    30% {
+        transform: translateX(-300%);
+    }
+
+    35% {
+        transform: translateX(-300%);
+    }
+
+    40% {
+        transform: translateX(-400%);
+    }
+
+    45% {
+        transform: translateX(-400%);
+    }
+
+    50% {
+        transform: translateX(-500%);
+    }
+
+    55% {
+        transform: translateX(-500%);
+    }
+
+    60% {
+        transform: translateX(-600%);
+    }
+
+    65% {
+        transform: translateX(-600%);
+    }
+
+    70% {
+        transform: translateX(-700%);
+    }
+
+    75% {
+        transform: translateX(-700%);
+    }
+
+    80% {
+        transform: translateX(-800%);
+    }
+
+    85% {
+        transform: translateX(-800%);
+    }
+
+    90% {
+        transform: translateX(-800%);
+    }
+
+    95% {
+        transform: translateX(-900%);
+    }
+
+    100% {
+        transform: translateX(-900%);
+    }
+}
+
+/* Formats the footer */
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    background-color: lightsteelblue;
+    border-radius: 25px;
+    bottom: 0;
+}

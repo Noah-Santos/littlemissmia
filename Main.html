@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Mobile App Development</title>
+
+ <link rel="stylesheet" href="Main.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="./plushies/Logoc.jpg" type="image/x-icon">
+</head>
+
+<body>
+ <Header>
+  <div class="center">
+   <h1>ShopLittleMissMia</h1>
+
+   
+    
+  </div>
+ </Header>
+ <nav>
+  <!-- the navbar -->
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+   <i class="fa fa-bars"></i>
+  </label>
+  <img src="./plushies/Logo.png" alt="Logo" id="logo" class="logos1">
+  <label class="logo">Home</label>
+  <ul>
+   <li><a class="active" href="Main.html">Home</a></li>
+   <li><a href="gallery.html">Gallery</a></li>
+   <li><a href="Shop.html">Shop</a></li>
+   <li><a href="paymentForm.html">Payment Form</a></li>
+   <li><a target="_blank"href="https://sites.google.com/view/shoplittlemissmia/home">Other Site</a></li>
+
+
+  </ul>
+
+
+ </nav>
+ <section>
+  
+ </section>
+ <br><br>
+ <input type="text" id="myInput" onkeyup="myFunction2()" placeholder="Search for names.." title="Type in a name">
+ <!-- items for the search bar -->
+ <ul id="myUL">
+
+  <li><a href="shop.html">Perry The Platypus</a></li>
+  <li><a href="shop.html">Panda</a></li>
+  <li><a href="shop.html">Duck</a></li>
+  <li><a href="shop.html">Boba</a></li>
+  <li><a href="shop.html">Bunny</a></li>
+ 
+  <li><a href="shop.html">Strawberry Frog</a></li>
+  <li><a href="shop.html">Frog</a></li>
+  <li><a href="shop.html">Pink Cuttlefish</a></li>
+  <li><a href="shop.html">Red Cuttlefish</a></li>
+  <li><a href="shop.html">Blue Cuttlefish</a></li>
+ 
+  <li><a href="shop.html">Blue Bees</a></li>
+  <li><a href="shop.html">Minecraft Bee</a></li>
+  <li><a href="shop.html">Yellow Bee</a></li>
+  <li><a href="shop.html">Bee Bucket Hat</a></li>
+  <li><a href="shop.html">Bucket Hat</a></li>
+
+  <li><a href="shop.html">Mini Mushroom</a></li>
+  <li><a href="shop.html">Mushroom Container</a></li>
+  <li><a href="shop.html">Mushroom Dude</a></li>
+  <li><a href="shop.html">Junimo</a></li>
+  <li><a href="shop.html">Seal</a></li>
+
+  <li><a href="shop.html">Dinosaur</a></li>
+  <li><a href="shop.html">ASU</a></li>
+  <li><a href="shop.html">Squshmallow</a></li>
+  <li><a href="shop.html">Blue Octopus</a></li>
+  <li><a href="shop.html">Pouch</a></li>
+ </ul>
+
+  <script>function myFunction2() {
+        //  js because it didnt work inside the js file
+    // makes the search bar filter
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+     a = li[i].getElementsByTagName("a")[0];
+     txtValue = a.textContent || a.innerText;
+     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+     } else {
+      li[i].style.display = "none";
+     }
+    }
+   }
+   </script>
+ <br><br>
+
+
+ <aside>
+
+
+ </aside>
+<br><br>
+
+<footer>
+  <!-- the footer -->
+  <p><em><strong>Production hours: Whenever I want</strong></em></p>
+  <br>
+  <p><em><strong>Contact me at: Insta: shoplittlemissmia Email: random@gmail.com Phone: 555-555-5555</strong></em></p>
+  <br>
+  <p><em><strong>Made By: Kyle Davis, and Noah Santos</strong></em></p>
+
+</footer>
+
+</body>
+
+</html>
