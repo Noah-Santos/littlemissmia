@@ -157,3 +157,10 @@ button {
         transform: none;
     }
 }
+/* Resize for mobile */
+@media (max-width: 428px) {
+    span {
+     font-size: 40%;
+     margin-left: -70px;
+    }
+   }
