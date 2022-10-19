@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="paymentForm.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="./plushies/Logoc.jpg" type="image/x-icon">
+ <title>Payment Form</title>
+</head>
+
+<body>
+
+  <nav>
+
+    <!-- The Navbar -->
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+    </label>
+    <img src="./plushies/Logo.png" alt="Logo" class="logos1">
+    <label class="logo">Payment Form</label>
+    <ul>
+      <li><a href="Main.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a class="active" href="paymentForm.html">Payment Form</a></li>
+      
+  
+  
+    </ul>
+  </nav>
+
+  <div class="main">
+<!-- where the navbar starts -->
+ <h1 class="head">Payment Form</h1>
+
+ <p>Require fields are followed by *</p>
+
+ <h2>Contact Information</h2>
+
+ <form>
+<!-- personal info -->
+  <label for="id">Name: *</label>
+  <input type="text" id="id" name="id" placeholder=" Name..." />
+  <br><br>
+
+  <label for="id">Email: *</label>
+  <input type="text" id="id" name="id" placeholder=" Email..." />
+  <br><br>
+
+  <label for="id">Phone Number: *</label>
+  <input type="text" id="id" name="id" placeholder=" Phone Number..." />
+  <br><br>
+
+  <h2>Product Information</h2>
+
+  <fieldset>
+
+    <legend>Product</legend>
+
+    <!-- where you chose your product -->
+    <select type="checkbox" id="product">
+    <option for="product">--Product Wanted--</option>
+    <option for="product">Perry the Platypus</option>
+    <option for="product">Panda</option>
+    <option for="product">Duck</option>
+    <option for="product">Boba</option>
+    <option for="product">Bunny</option>
+    <option for="product">Strawberry Frog</option>
+    <option for="product">Frog</option>
+    <option for="product">Pink Cuttlefish</option>
+    <option for="product">Red Cuttlefish</option>
+    <option for="product">Blue Cuttlefish</option>
+    <option for="product">Blue Bees</option>
+    <option for="product">Minecraft Bee</option>
+    <option for="product">Yellow Bee</option>
+    <option for="product">Bee Bucket Hat</option>
+    <option for="product">Bucket Hat</option>
+    <option for="product">Mini Mushroom</option>
+    <option for="product">Mushroom Container</option>
+    <option for="product">Mushroom Dude</option>
+    <option for="product">Junimo</option>
+    <option for="product">Seal</option>
+    <option for="product">Dinosaur</option>
+    <option for="product">ASU Dinosaur</option>
+    <option for="product">Squishmallow</option>
+    <option for="product">Blue Octopus</option>
+    <option for="product">Pouch</option>
+    </select>
+    
+    <br><br>
+    <p>You can only buy one product per purchase.</p>
+    <br><br>
+    <label><strong>Special Instructions</strong></label>
+    <br>
+    <textarea placeholder="Special instructions"></textarea>
+  </fieldset>
+
+  <h2>Size</h2>
+
+  <fieldset>
+
+    <legend>Sizes</legend>
+
+    <label for="hatsizes"><strong>Hat Sizes</strong></label>
+    <select type="dropdown" id = "hatsizes">
+      <option value="">--choose a option--</option>
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+    </select>
+  </fieldset>
+
+
+
+  <h2>Payment Information</h2>
+
+  <label for="card-select">Card Type:</label>
+<!-- card info -->
+  <select name="card" id="card-select">
+   <option value="">--Please choose an option--</option>
+   <option value="Discover">Discover</option>
+   <option value="mastercard">mastercard</option>
+   <option value="visa">visa</option>
+  </select>
+  <br><br>
+  <label for="id">Cardnumber: *</label>
+  <input type="password" id="id" name="id" placeholder=" Cardnumber..." />
+  <br><br>
+
+  <label for="id">Experation date: *</label>
+  <input type="date" id="id" name="id" placeholder=" mm/dd/yyyy" />
+  <br><br>
+
+  <p><em>Formatted as <br> mm/dd/yyyy</em></p>
+<!-- the purchase button -->
+  <a href="thank_you.html">
+    <button type="button">Buy</button>
+</a>
+</div>
+
+<br><br>
+
+<footer>
+  <!-- the footer -->
+      <p><em><strong>Production hours: Whenever I want</strong></em></p>
+<br>
+      <p><em><strong>Contact me at: Insta: shoplittlemissmia  Email: random@gmail.com Phone: 555-555-5555</strong></em></p>
+<br>
+      <p><em><strong>Made By: Kyle Davis, and Noah Santos</strong></em></p>
+
+</footer>
+</body>
+
+</html>
