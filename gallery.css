@@ -388,3 +388,10 @@ footer {
     border-radius: 25px;
     bottom: 0;
 }
+/* Resize for mobile */
+@media (max-width: 428px) {
+    span {
+     font-size: 40%;
+     margin-left: 0px;
+    }
+   }
